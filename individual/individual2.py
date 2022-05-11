@@ -5,15 +5,14 @@
 # -*- coding: utf-8 -*-
 
 import sys
-
-
 from math import fabs
-# Вводятся 3 любых числа
-a = int(input("Введите a: "))
-b = int(input("Введите b: "))
-c = int(input("Введите c: "))
-# Идёт перебор значений, которые больше > 4
+
 if __name__ == '__main__':
+    # Вводятся 3 любых числа
+    a = int(input("Введите a: "))
+    b = int(input("Введите b: "))
+    c = int(input("Введите c: "))
+    # Идёт перебор значений, которые больше > 4
     if fabs(a) >= 4:
         print("a=",fabs(a))
     elif fabs(b) >= 4:
