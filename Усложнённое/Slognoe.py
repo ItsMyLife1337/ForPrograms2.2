@@ -1,5 +1,5 @@
 # В-3. Задание №3.Найти интегральный гиперболический синус.
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import math
@@ -11,17 +11,17 @@ EPS = 10 ** -10
 if __name__ == '__main__':
     x = float(input("add value for x: "))
     if x == 0:
-         print("Illegal value of x", file=sys.stderr)
-         exit(1)
+        print("Illegal value of x", file=sys.stderr)
+        exit(1)
 
     a = x ** 3 / 18
     S, n = a, 1
 
     # Находим сумму членов ряда
     while math.fabs(a) > EPS:
-         a *= (x ** (2*n+1) * n) / (2 * n + 1) ** 2 * x ** n
-         S += a
-         n += 1
+        a *= (x ** (2*n+1) * n) / (2 * n + 1) ** 2 * x ** n
+        S += a
+        n += 1
 
     # Выводим значение
     print(f"Si({x}) = {x + S}")
