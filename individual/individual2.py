@@ -1,16 +1,16 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Из трех действительных чисел a,b и c выбрать те, модули которых не меньше 4.
 """
-# !/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import sys
 from math import fabs
 
 if __name__ == '__main__':
-    a = int(input("Введите a: "))
-    b = int(input("Введите b: "))
-    c = int(input("Введите c: "))
+    a = float(input("Введите a: "))
+    b = float(input("Введите b: "))
+    c = float(input("Введите c: "))
 
     if fabs(a) >= 4:
         print("a=", fabs(a))
