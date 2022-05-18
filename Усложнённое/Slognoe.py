@@ -5,7 +5,6 @@
 import math
 import sys
 
-
 EPS = 10 ** -10
 
 if __name__ == '__main__':
@@ -18,7 +17,7 @@ if __name__ == '__main__':
     S, n = a, 1
 
     while math.fabs(a) > EPS:
-        a *= (x ** (2*n+1) * n) / (2 * n + 1) ** 2 * x ** n
+        a *= (x ** 2 * n) / (2 * (n + 1)) ** 2 * x
         S += a
         n += 1
 
